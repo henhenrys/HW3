@@ -14,9 +14,21 @@ body:has(#theme:checked) {
     --surface-1: var(--black-2);
 }
 
+h1:has(+ dl) {
+    font-weight: bold;
+    color: rgb(140, 121, 47);
+}
+
 .footer {
   text-align: center;
   background-color: rgb(39, 149, 251);
+}
+
+figure {
+    transform: rotate(10deg);
+    img {
+        text-align: center;
+    }
 }
 
 .content {
@@ -24,10 +36,6 @@ body:has(#theme:checked) {
     flex-direction: column;
     margin: 5rem;
     justify-content: center;
-}
-
-figure img {
-    text-align: center;
 }
 
 .landing {
