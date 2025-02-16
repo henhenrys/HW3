@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome to Henry Tran's personal portfolio. Explore my skills, projects, and resume.">
+        <meta name="keywords" content="Henry Tran, portfolio, software developer, projects, resume, coding">
+        <meta name="author" content="Henry Tran">
+        <title>Personal Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
+            <h2>Welcome to my page!</h2>
+            <h3>Looking for Something?</h3>
+        </header>
+        <nav>
+            <search>
+                <form role="search">
+                    <label for="query">Search Here:</label>
+                    <input id="query" name="q" type="search">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+            <a href="index.html">Home </a>
+            <a href="About.html">About </a>
+            <a href="Skills.html">Skills </a>
+            <a href="Projects.html">Projects </a>
+            <a href="Contact.html">Contact </a>
+            <a href="static/Resume-HT.pdf" target="_blank">Resume</a>
+            <button>Night Mode</button>
+        </nav>
+        <main>
+            <table style="border: 1px solid black;">
+                <caption>Connect With Me Here</caption>
+                <colgroup>
+                    <col span="3" style="background-color: aqua;">
+                </colgroup>
+                <tr>
+                    <th>GitHub</th>
+                    <th>LinkedIn</th>
+                    <th>Discord</th>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/henhenrys">Here</a></td>
+                    <td><a href="https://www.linkedin.com/in/henry-tran-308a8a227/">Here</a></td>
+                    <td><a href="https://www.discord.com">Here</a></td>
+                </tr>
+            </table><br>
+            <form>
+                <fieldset>
+                 <legend>Contact Me:</legend>
+                 <label for="fname">First name:</label>
+                 <input type="text" id="fname" name="fname"><br>
+                 <label for="lname">Last name:</label>
+                 <input type="text" id="lname" name="lname"><br>
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email"><br>
+
+                 <label for="reason">Choose your reason:</label>
+                 <input list="reasons" name="reason" id="reason">
+                 <datalist id="reasons">
+                   <option value="Recruitment">
+                   <option value="Connection">
+                   <option value="Concerns">
+                   <option value="Advice">
+                   <option value="Other">
+                 </datalist><br>
+
+                 <label for="urgency">How Urgent</label>
+                 <select name="urgency" id="urgency">
+                   <optgroup label="Greatly">
+                     <option value="Job Offer">Job Offer</option>
+                     <option value="Copyright">Copyright</option>
+                   </optgroup>
+                   <optgroup label="Minimal">
+                     <option value="Word of Wisdom">Words of Wisdom</option>
+                     <option value="Meeting">Meeting</option>
+                   </optgroup>
+                 </select><br>
+
+                 <label for="response">Response:</label>
+                 <textarea id="response"></textarea><br>  
+                 <input type="submit" value="Submit">
+                </fieldset>
+               </form>
+               
+        </main>
+        <footer>
+            Copyright <span id="user">Henry Tran</span> 2025
+            <address>
+                9450 Gilman Dr. La Jolla, CA 92092
+            </address>
+        </footer>
+        <script>
+
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+</html>

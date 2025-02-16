@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome to Henry Tran's personal portfolio. Explore my skills, projects, and resume.">
+        <meta name="keywords" content="Henry Tran, portfolio, software developer, projects, resume, coding">
+        <meta name="author" content="Henry Tran">
+        <title>Personal Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+        <style>
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
+            <h1>Welcome to my page!</h1>
+            <h2>Looking for Something?</h2>
+        </header>
+        <nav>
+            <search>
+                <form role="search">
+                    <label for="query">Search Here:</label>
+                    <input id="query" name="q" type="search">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+            <a href="index.html">Home </a>
+            <a href="About.html">About </a>
+            <a href="Skills.html">Skills </a>
+            <a href="Projects.html">Projects </a>
+            <a href="Contact.html">Contact </a>
+            <a href="static/Resume-HT.pdf" target="_blank">Resume</a>
+            <button>Night Mode</button>
+        </nav>
+        <main>
+            <h2>Henry Tran</h2>
+            <dl>
+                <dt><del>Developer</del><ins>Software Developer</ins></dt>
+                <dd><blockquote>Where there's a will there's a way</blockquote></dd>
+            </dl>
+            <aside>
+                <canvas id="theCanvas" style="border:1px solid #000000;"></canvas>
+                <div id="svg">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                    </svg>
+                </div>
+            </aside>
+            <math>
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <mo>&InvisibleTimes;</mo>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+            </math>
+        </main>
+        <footer>
+            Copyright <span id="user">Henry Tran</span> 2025
+            <address>
+                9450 Gilman Dr. La Jolla, CA 92092
+            </address>
+            <hello-world></hello-world>
+        </footer>
+        <script>
+            var canvas = document.getElementById("theCanvas");
+            var ctxt = canvas.getContext("2d");
+            ctxt.font = "12px Times New Roman";
+            ctxt.fillText("Hello World",10,50);
+            class HelloWorldElement extends HTMLElement {
+                constructor() {
+                super();
+                console.log("Hello world!");
+                }
+            }
+            customElements.define("hello-world", HelloWorldElement);
+        </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+</html>
