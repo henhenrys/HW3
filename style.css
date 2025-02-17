@@ -13,9 +13,12 @@ h1:has(+ dl) {
     color: rgb(140, 121, 47);
 }
 
+@scope (.footer) {
+    background-color: rgb(39, 149, 251);
+}
+
 .footer {
   text-align: center;
-  background-color: rgb(39, 149, 251);
 }
 
 figure {
@@ -58,7 +61,7 @@ form {
 
 del {
     animation-name: highlight;
-    animation-duration: 0.75s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     background-size: 200%;
     background-image: linear-gradient(to right, var(--hover-text) 50%, transparent 50%), 
