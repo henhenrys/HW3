@@ -8,12 +8,6 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body:has(#theme:checked) {
-    --primary: var(--black);
-    --text: var(--grey);
-    --surface-1: var(--black-2);
-}
-
 h1:has(+ dl) {
     font-weight: bold;
     color: rgb(140, 121, 47);
